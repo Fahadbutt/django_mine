@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+{% if latest_question_list %}
+    <ul>
+
+{% for question in latest_question_list %}
+   <li>
+{{ question.question_text }}
+
+</li>
+    </ul>
+{% ed for %}
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+</body>
+</html>
